@@ -1,3 +1,3 @@
 # recruitment-website
 
-## Flying the flag for traditional recruitment! 
+# Use of HTML to build a simple recruitment website 
