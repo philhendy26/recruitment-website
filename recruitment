@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumanCall Jobs • Every Applicant Gets Called</title>
+  <style>
+    :root {
+      --primary: #e91e63;
+      --accent: #ff9800;
+      --dark: #1a1a2e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f1e, #1a1a2e);
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--dark);
+      padding: 1.5rem 5%;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      border-bottom: 3px solid var(--primary);
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://source.unsplash.com/random/1920x1080/?human,handshake') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .hero-content h1 {
+      font-size: 3.8rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #ffccbc;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 15px;
+    }
+    .jobs-section {
+      padding: 100px 5%;
+      background: white;
+      color: #1a1a2e;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: var(--dark);
+    }
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 25px;
+    }
+    .job-card {
+      border: 2px solid #eee;
+      border-radius: 16px;
+      padding: 25px;
+      transition: all 0.3s;
+      background: white;
+    }
+    .job-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(233, 30, 99, 0.15);
+      border-color: var(--primary);
+    }
+    .sector {
+      display: inline-block;
+      padding: 6px 16px;
+      background: var(--accent);
+      color: white;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+    .apply-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .apply-btn:hover {
+      background: #c2185b;
+    }
+    .guarantee {
+      background: linear-gradient(135deg, #e91e63, #ff9800);
+      padding: 60px 5%;
+      text-align: center;
+      color: white;
+    }
+    footer {
+      background: var(--dark);
+      padding: 60px 5%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div style="display:flex; justify-content:space-between; align-items:center; max-width:1400px; margin:auto;">
+      <div class="logo">HumanCall Jobs</div>
+      <nav style="color:white; font-size:1.1rem;">
+        <a href="#jobs" style="margin:0 20px; color:white; text-decoration:none;">Find Jobs</a>
+        <a href="#" style="margin:0 20px; color:white; text-decoration:none;">For Recruiters</a>
+        <a href="#" style="margin:0 20px; color:white; text-decoration:none;">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Only Job Board<br>Where <span style="color:#ff9800;">Every Applicant Gets Called</span></h1>
+      <p style="font-size:1.8rem; max-width:800px; margin:0 auto 30px;">
+        No AI screening. No ghosting. No automated rejections.<br>
+        <strong>Real humans. Real phone calls. Guaranteed.</strong>
+      </p>
+      <div class="badge">🌍 The Only Website in the World Doing This</div>
+      <button onclick="document.getElementById('jobs').scrollIntoView({behavior:'smooth'})" 
+              style="background:#ff9800; color:black; font-size:1.4rem; padding:18px 50px; border:none; border-radius:50px; margin-top:30px; cursor:pointer;">
+        Browse Jobs Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="guarantee">
+    <h2 style="font-size:2.5rem; margin-bottom:20px;">💙 Our Promise To You</h2>
+    <p style="font-size:1.5rem; max-width:900px; margin:auto;">
+      Every single person who applies to a job on HumanCall Jobs will receive a <strong>personal phone call</strong> from the recruiter.<br>
+      No exceptions. No AI. No silence.
+    </p>
+  </section>
+
+  <!-- Jobs Section -->
+  <section id="jobs" class="jobs-section">
+    <h2 class="section-title">Featured Jobs - Updated May 29, 2026</h2>
+    
+    <div class="jobs-grid">
+
+      <!-- Job 1 -->
+      <div class="job-card">
+        <div class="sector">Healthcare</div>
+        <h3>Registered Nurse - Emergency Department</h3>
+        <p><strong>£48,000 – £55,000</strong> • London</p>
+        <p style="margin:15px 0; font-size:0.95rem;">Full-time • Immediate start • NHS Trust</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="job-card">
+        <div class="sector">Technology</div>
+        <h3>Senior Python Developer (AI Team)</h3>
+        <p><strong>£85,000 – £110,000</strong> • Manchester (Hybrid)</p>
+        <p style="margin:15px 0; font-size:0.95rem;">Permanent • Cutting-edge projects</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="job-card">
+        <div class="sector">Finance</div>
+        <h3>Investment Analyst</h3>
+        <p><strong>£65,000 – £82,000</strong> • Edinburgh</p>
+        <p style="margin:15px 0; font-size:0.95rem;">Asset Management Firm</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+      <!-- Job 4 -->
+      <div class="job-card">
+        <div class="sector">Education</div>
+        <h3>Primary School Teacher (Year 4)</h3>
+        <p><strong>£38,000 – £45,000</strong> • Birmingham</p>
+        <p style="margin:15px 0; font-size:0.95rem;">Outstanding Ofsted School</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+      <!-- Job 5 -->
+      <div class="job-card">
+        <div class="sector">Construction</div>
+        <h3>Site Manager - Major Infrastructure</h3>
+        <p><strong>£70,000 – £85,000 + Package</strong> • Bristol</p>
+        <p style="margin:15px 0; font-size:0.95rem;">£450m Project</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+      <!-- Job 6 -->
+      <div class="job-card">
+        <div class="sector">Creative</div>
+        <h3>Brand Designer (Senior)</h3>
+        <p><strong>£55,000 – £68,000</strong> • Remote (UK)</p>
+        <p style="margin:15px 0; font-size:0.95rem;">Global Consumer Brand</p>
+        <button class="apply-btn" onclick="alert('Application submitted! A recruiter will call you within 48 hours.')">Apply Now – Get Called</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section style="padding:80px 5%; background:#1a1a2e; text-align:center;">
+    <h2 class="section-title" style="color:white;">We Cover All Sectors</h2>
+    <p style="font-size:1.4rem; margin:30px auto; max-width:700px;">
+      Healthcare • Technology • Finance • Education • Construction • Marketing • Engineering • Hospitality • Retail • Legal • Government • Creative Arts
+    </p>
+  </section>
+
+  <footer>
+    <h2>HumanCall Jobs</h2>
+    <p>The world's only job platform that guarantees a personal phone call for every applicant.</p>
+    <p style="margin-top:20px;">© 2026 HumanCall Jobs • Built for humans, by humans.</p>
+  </footer>
+
+</body>
+</html>
